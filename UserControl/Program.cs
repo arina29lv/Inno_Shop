@@ -15,7 +15,7 @@ var app = builder.Build();
 
 app.UseSwaggerDocumentation()
     .UseAuth()
-    .ApplyMigrations() /* works only with connected DB - simplify migrations for docker's DB container */
+    .ApplyMigrations() 
     .MapControllers();
 
 app.Run();
